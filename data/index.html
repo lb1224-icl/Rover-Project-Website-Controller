@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+    <head><link rel='stylesheet' type='text/css' href='style.css'>
+    <script src="analysis.js"></script></head>
+
+    <body>
+        <div class="row">
+            <div class="column2">
+                <div class="card">
+                    <div class = "header">
+                        <h1>Group 32 Data</h1>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <div>
+                        <h2>Controller</h2>
+                    </div>
+                    <div class = "content">
+                        <!-- <svg width="300" height="170" viewBox="25 25 50 50">
+                            <path d="M79.976,45.43c-2.781-10.607-5.986-17.585-13.369-19.59c-1.127-0.305-2.188-0.454-3.244-0.454 c-2.228,0-4.02,0.671-5.758,1.321c-1.598,0.598-3.383,1.253-5.852,1.475l-1.848,0.054c0,0.01-5.581-0.808-7.524-1.536 c-1.728-0.648-3.517-1.318-5.735-1.318c-1.059,0-2.122,0.149-3.248,0.456c-7.389,2.006-10.593,8.983-13.368,19.591 c-3.218,12.287-2.328,20.523,2.44,22.6c0.776,0.34,1.594,0.512,2.428,0.512c4.24,0,8.139-4.457,10.987-7.715l0.775-0.898 c2.322-2.716,7.186-4.273,13.342-4.273c6.695,0,10.81,1.318,13.34,4.277l0.776,0.9c2.845,3.254,6.741,7.707,10.984,7.707 c0.839,0,1.654-0.172,2.425-0.51C82.296,65.953,83.187,57.717,79.976,45.43z M39.87,46.26h-3.183v3.083 c0,1.131-0.995,2.084-2.172,2.084c-1.18,0-2.175-0.953-2.175-2.084V46.26h-2.99c-1.128,0-2.083-0.996-2.083-2.174 c0-1.18,0.954-2.175,2.083-2.175h2.99v-3.086c0-1.129,0.996-2.084,2.175-2.084c1.177,0,2.172,0.955,2.172,2.084v3.086h3.183 c1.127,0,2.083,0.995,2.083,2.175C41.954,45.265,40.998,46.26,39.87,46.26z M62.475,50.043c-1.763,0-3.196-1.432-3.196-3.194 c0-1.762,1.436-3.194,3.196-3.194c1.76,0,3.191,1.433,3.191,3.194C65.666,48.611,64.234,50.043,62.475,50.043z M68.434,44.084 c-1.762,0-3.193-1.434-3.193-3.195c0-1.76,1.433-3.193,3.193-3.193s3.194,1.433,3.195,3.193 C71.629,42.651,70.194,44.084,68.434,44.084z" fill=#52796f>
+                        </svg> -->
+
+                    <div class="row">
+                            <div class="column">
+                                <div class="card2 button" id="button" onclick="checkLockData();">
+                                    <div class = "content">
+                                        <h3>Save Duck</h3>
+                                        <svg fill="#cad2c5" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-112.64 -112.64 737.28 737.28" xml:space="preserve" width="115px" height="115px"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <g> <path d="M411.374,0H0v512h512V100.626L411.374,0z M131.657,43.886h248.686v146.286H131.657V43.886z M380.343,468.114H131.657 V321.829h248.686V468.114z M468.114,468.114h-43.886V277.943H87.771v190.171H43.886V43.886h43.886v190.171h336.457V74.919 l43.886,43.886V468.114z"></path> </g> </g> <g> <g> <rect x="182.857" y="373.029" width="146.286" height="43.886"></rect> </g> </g> <g> <g> <rect x="160.914" y="80.457" width="43.886" height="73.143"></rect> </g> </g> </g></svg>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="column">
+                                <div class="card2 button" id="button" onclick="removeLast();">
+                                    <div class = "content">
+                                        <h3>Remove Duck</h3>
+                                        <svg width="115px" height="115px" viewBox="-5.28 -5.28 34.56 34.56" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M13.5 3H12H8C6.34315 3 5 4.34315 5 6V18C5 19.6569 6.34315 21 8 21H10M13.5 3L19 8.625M13.5 3V7.625C13.5 8.17728 13.9477 8.625 14.5 8.625H19M19 8.625V10.8125" stroke="#cad2c5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M14.0251 15.0251C13.3918 15.6585 13 16.5335 13 17.5C13 19.433 14.567 21 16.5 21C17.4665 21 18.3415 20.6082 18.9749 19.9749M14.0251 15.0251C14.6585 14.3918 15.5335 14 16.5 14C18.433 14 20 15.567 20 17.5C20 18.4665 19.6082 19.3415 18.9749 19.9749M14.0251 15.0251L16.5 17.5L18.9749 19.9749" stroke="#cad2c5" stroke-width="2" stroke-linecap="round"></path> </g></svg>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <div>
+                        <h2>Current Duck</h2>
+                    </div>
+                    <div class = "content">
+                        <div class="row">
+                            <div class="column">
+                                <div class="card2" id= "IR" onclick="changeClass(this);">
+                                    <div>
+                                        <p>Current IR</p>
+                                    </div>
+                                     <div class = "content">
+                                        <h3 id="ir">456.1Hz</h3>  
+                                     </div>
+                                </div>
+                                
+                            </div>
+                            <div class="column">
+                                <div class="card2" id = "RF" onclick="changeClass(this);">
+                                    <div>
+                                        <p>Current Radio</p>
+                                    </div>
+                                    <div class = "content">
+                                        <h3 id="rf">152.9Hz</h3>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="column">
+                                <div class="card2" id= "NAME" onclick="changeClass(this);">
+                                    <div>
+                                        <p>Name</p>
+                                    </div>
+                                     <div class = "content">
+                                        <h3 id="name"> " " </h3>
+                                     </div>
+                                </div>
+                                
+                            </div>
+                            <div class="column">
+                                <div class="card2" id= "MAGNET" onclick="changeClass(this);">
+                                    <div>
+                                        <p>Magnetic Direction</p>
+                                    </div>
+                                     <div class = "content">
+                                        <h3 id="magnet">Up</h3>
+                                     </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row2">
+            <div class="column2">
+                <div class="card">
+                    <div>
+                        <h2>Previous Ducks</h2>
+                    </div>
+                    <div class = "content">
+                        <table id = "table" class="styled-table">
+                        <thead>
+                            <tr>
+                                <th class="first">Name</th>
+                                <th>Species</th>
+                                <th>IR Frequency</th>
+                                <th>Radio Frequency</th>
+                                <th class="last">Magnetic Direction</th>
+                            </tr>
+                        </thead>
+                        <tbody id = "table_body">
+                            <tr id = "1">
+                                <td>N/A</td>
+                                <td>N/A</td>
+                                <td>N/A</td>
+                                <td>N/A</td>
+                                <td>N/A</td>
+                            </tr>
+                            <tr id = "2">
+                                <td>N/A</td>
+                                <td>N/A</td>
+                                <td>N/A</td>
+                                <td>N/A</td>
+                                <td>N/A</td>
+                            </tr>
+                            <tr id = "3">
+                                <td>N/A</td>
+                                <td>N/A</td>
+                                <td>N/A</td>
+                                <td>N/A</td>
+                                <td>N/A</td>
+                            </tr>
+                            <tr id = "4">
+                                <td>N/A</td>
+                                <td>N/A</td>
+                                <td>N/A</td>
+                                <td>N/A</td>
+                                <td>N/A</td>
+                            </tr>
+                            <tr id = "5">
+                                <td>N/A</td>
+                                <td>N/A</td>
+                                <td>N/A</td>
+                                <td>N/A</td>
+                                <td>N/A</td>
+                            </tr>
+                            <tr id = "6">
+                                <td>N/A</td>
+                                <td>N/A</td>
+                                <td>N/A</td>
+                                <td>N/A</td>
+                                <td>N/A</td>
+                            </tr>
+                            <tr id = "7">
+                                <td>N/A</td>
+                                <td>N/A</td>
+                                <td>N/A</td>
+                                <td>N/A</td>
+                                <td>N/A</td>
+                            </tr>
+                            <tr id = "8">
+                                <td>N/A</td>
+                                <td>N/A</td>
+                                <td>N/A</td>
+                                <td>N/A</td>
+                                <td>N/A</td>
+                            </tr>
+                            <tr id = "9">
+                                <td>N/A</td>
+                                <td>N/A</td>
+                                <td>N/A</td>
+                                <td>N/A</td>
+                                <td>N/A</td>
+                            </tr>
+                        </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>   
+</html>

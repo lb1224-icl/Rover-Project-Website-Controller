@@ -1,0 +1,203 @@
+body {
+    background-color: #2f3e46;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-flow: column;
+    margin-top: 0;
+}
+
+html {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+h1 {
+  text-align:center;
+
+  text-transform:uppercase;
+  font-size:30px; letter-spacing:1px;
+  color: #cad2c5;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  &::before,
+  &::after {
+    display: inline-block;
+    content: "";
+    border-top: .3rem solid #cad2c5;
+    width: 30%;
+    margin: 0 1rem;
+    transform: translateY(-0.5rem);
+    border-radius: 25px;
+  }
+}
+
+h2 {
+  text-align:center;
+
+  text-transform:uppercase;
+  font-size:15px; letter-spacing:1px;
+  color: #cad2c5;
+
+  padding: 3px;
+  &::before,
+  &::after {
+    display: inline-block;
+    content: "";
+    border-top: .2rem solid #cad2c5;
+    width: 20%;
+    margin: 0 .8rem;
+    transform: translateY(-0.3rem);
+    border-radius: 25px;
+  }
+}
+
+p{
+    text-align:center;
+    text-transform:uppercase;
+    font-size:12px; letter-spacing:1px;
+    color: #cad2c5;
+    margin: 12px 0 0 0;
+}
+
+h3{
+    text-align:center;
+    font-size:24px; letter-spacing:1px;
+    color: #cad2c5;
+    margin: 17px 0px 17px 0;
+}
+
+.content{
+    padding: 0px;
+}
+
+
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: calc(1/2*100%);
+  padding: 0 5px;
+  height: 100%;
+}
+.column2 {
+  float: left;
+  width: 100%;
+  padding: 0 5px;
+  height:100%;
+}
+
+.row {
+    margin: 10px -5px 0px;
+    flex: 0 1 auto;
+}
+
+/* Clear floats after the columns */
+.row:after, .row2:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row2 {
+    margin: 10px -5px 10px;  
+    height:100%;
+}
+
+.card {
+  padding: 8px;
+  text-align: center;
+  background-color: #354f52;
+  border-radius: 20px;
+  height: 100%;
+}
+
+.card2 {
+  padding: 2px;
+  text-align: center;
+  background-color: #2f3e46;
+  border-radius: 10px;
+}
+
+.card2:hover {
+  transform: scale(1.02);
+  -webkit-transform: scale(1.02);
+}
+
+.card2:active {
+  background-color: #52796f;
+}
+
+.card3{
+  padding: 2px;
+  text-align: center;
+  background-color: #52796f;
+  border-radius: 10px;
+}
+.card3:hover {
+  transform: scale(1.02);
+  -webkit-transform: scale(1.02);
+}
+
+.header {
+  padding: 4px;
+  text-align: center;
+  background-color: #52796f;
+  border-radius: 20px;
+}
+
+.content{
+  text-align: center;
+}
+
+.styled-table {
+    border-collapse: collapse;
+    font-size: 0.8em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 8px;
+    margin-top: 8px;
+    width: 90%;
+}
+
+.styled-table thead tr {
+    background-color: #52796f;
+    color: #cad2c5;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 9px 12px;
+}
+
+.styled-table th.first{
+    border-radius:15px 0px 0px 0px
+}
+.styled-table th.last{
+    border-radius:0px 15px 0px 0px
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #52796f;
+    color: #cad2c5;
+}
+.styled-table tbody tr:last-child {
+    border-bottom: 0px; 
+}
+
+
+
+
